@@ -1,0 +1,109 @@
+.header{
+    background-image: url(../images/headerBg.jpg);
+    min-height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    &__top{
+        padding-top: 79px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 303px;
+    }
+    &__content{
+        max-width: 600px;
+        margin-bottom: 112px;
+    }
+    &__title{
+        font-family: 'spaceagecyrillic';
+        font-weight: 400;
+        font-size: 60px;
+        color: $cw;
+        & span{
+            font-weight: 400;
+            font-size: 110px;   
+            line-height: 110px;
+        }
+    }
+    &__text{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 49px;
+        & p{
+            font-family: 'SF-Pro-Display';
+            font-size: 24px;
+            line-height: 29px;
+            font-weight: 400;
+            color: $cw;
+        }
+    }
+    &__btn{
+        font-family: 'SF-Pro-Display';
+        font-size: 24px;
+        line-height: 29px;
+        font-weight: 400;
+        width: 100%;
+        color: $cw;
+        background-color: transparent;
+        padding: 15px 137px;
+        border: 1px solid $cw;
+        cursor: pointer;
+    }
+    &__description{
+        display: flex;
+        justify-content: flex-end;
+        &-text{
+            width: 165px;
+            color: $cw;
+            margin-left: 52px;
+            font-size: 14px;
+            line-height: 17px;
+            &:first-child{
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+.menu{
+    &__list{
+        display: flex;
+    }
+    &__item{
+        margin-right: 30px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    &__link{
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 400;
+        color: $cw;
+        transition: color 0.4s;
+        &--active,&:hover{
+            color: $cr;
+        }
+    }
+
+}
+
+.phone{
+    margin-left: 241px;
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 29px;
+    color: $cw;
+}
+.login{
+    margin-left: 22px;
+    height: 30px;
+    width: 30px;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
